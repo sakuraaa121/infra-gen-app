@@ -1,0 +1,5 @@
+{
+  "projects": {
+    "default": "my-infra-gen-app"
+  }
+}
