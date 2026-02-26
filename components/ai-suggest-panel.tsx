@@ -31,7 +31,7 @@ export default function AiSuggestPanel({ onSuggest }: AiSuggestPanelProps) {
     setIsLoading(true);
 
     try {
-      const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
+      const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${apiKey}`;
       const systemInstruction = `あなたは優秀なインフラエンジニアです。ユーザーの作りたいアプリの要件を聞き、以下の指定された選択肢の中から最適な環境構成を **JSONフォーマットのみ** で返答してください。マークダウンのコードブロック(\`\`\`json ... \`\`\`)は付けず、純粋なJSON文字列だけを返してください。
 選択可能な値：
 - os: "WSL (Windows)", "macOS", "Ubuntu", "VirtualBox" のいずれか1つ
